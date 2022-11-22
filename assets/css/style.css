@@ -42,7 +42,7 @@ body{
 
 .home-feature-image-section{
     /* background-image: url('/assets/images/header-image.png'); */
-    background-image: url('/assets/images/carbg.JPG');
+    background-image: url('./assets/images/carbg.JPG');
     background: cover;
     background-position: center center;
     background-repeat: no-repeat;
