@@ -42,8 +42,8 @@ body{
 
 .home-feature-image-section{
     /* background-image: url('/assets/images/header-image.png'); */
-    background-image: url('./assets/images/carbg.JPG');
-    background: cover;
+    background-image: url('https://raw.githubusercontent.com/hostashish/london-driven/main/assets/images/carbg.JPG');
+    background-size: auto;
     background-position: center center;
     background-repeat: no-repeat;
 }
