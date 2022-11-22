@@ -41,8 +41,9 @@ body{
 }
 
 .home-feature-image-section{
-    background-image: url('/assets/images/header-image.png');
-    height: 398px;
+    /* background-image: url('/assets/images/header-image.png'); */
+    background-image: url('/assets/images/carbg.JPG');
+    background: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -166,14 +167,182 @@ img.img-fluid.w-25 {
     display: initial !important;
 }
 
-/* Owl Carousel Slider CSS */
+.our-services-section{
+    background: #F4F4F4;
+}
 
+.our-services-main-heading{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 30px;
+    color: #403D51;
+}
+
+.our-services-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129.4%;
+    color: #403D51;
+}
+
+.our-services-card-title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #403D51;
+}
+
+.our-services-card-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #6C6979;
+}
+
+.why-choose-us-section{
+    background: #E4E4E4;
+}
+
+.why-choose-us-heading{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 30px;
+    color: #403D51;
+}
+
+.why-choose-us-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 136.9%;
+    color: #403D51;
+}
+
+.why-choose-us-flex-item-title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.why-choose-us-flex-item-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+}
+
+
+.what-they-say-section{
+    background: #F4F4F4;
+}
+
+.what-they-say-main-heading{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 30px;
+    color: #403D51;
+}
+
+.what-they-say-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129.4%;
+    color: #403D51;
+}
+
+.what-they-say-user-name{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #403D51;
+}
+
+.what-they-say-item-card-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    color: #B8B6C4;
+}
+
+.what-they-say-ratting-number{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #B8B6C4;
+}
+
+
+i.bi.bi-star-fill {
+    color: #ECD379 !important;
+}
+
+.footer-section{
+    background: #737373;
+}
+
+.car-logo-text-footer {
+    font-family: 'Hammersmith One';
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.footer-title{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+.footer-link{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+    line-height: 2;
+}
+
+.footer-link:hover{
+    color: #000000;
+}
+
+/* Owl Carousel Slider CSS */
+/* Slider Our Fleet */
 .main-content {
     position: relative;
     }
     .main-content .owl-theme .custom-nav {
       position: absolute;
-      top: 30%;
+      top: 35%;
       left: 0;
       right: 0;
     }
@@ -201,3 +370,73 @@ img.img-fluid.w-25 {
         color:none !important;
         text-decoration: none !important;
     }
+
+    /* Slider Our Services */
+    .main-content-two {
+        position: relative;
+        }
+        .main-content-two .owl-theme .custom-nav {
+          position: absolute;
+          top: 20%;
+          left: 0;
+          right: 0;
+        }
+        .main-content-two .owl-theme .custom-nav .owl-prev, .main-content-two .owl-theme .custom-nav .owl-next {
+          position: absolute;
+          height: 100px;
+          color: inherit;
+          background: none;
+          border: none;
+          z-index: 100;
+        }
+        .main-content-two .owl-theme .custom-nav .owl-prev i, .main-content-two .owl-theme .custom-nav .owl-next i {
+          font-size: 2.5rem;
+          color: #000000;
+        }
+        .main-content-two .owl-theme .custom-nav .owl-prev {
+          left: 0;
+        }
+        .main-content-two .owl-theme .custom-nav .owl-next {
+          right: 0;
+        }
+    
+        .owl-theme .owl-nav [class*=owl-]:hover {
+            background: none !important;
+            color:none !important;
+            text-decoration: none !important;
+        }
+
+    /* Slider What They Say*/
+    .main-content-three {
+        position: relative;
+        }
+        .main-content-three .owl-theme .custom-nav {
+          position: absolute;
+          top: 25%;
+          left: 0;
+          right: 0;
+        }
+        .main-content-three .owl-theme .custom-nav .owl-prev, .main-content-three .owl-theme .custom-nav .owl-next {
+          position: absolute;
+          height: 100px;
+          color: inherit;
+          background: none;
+          border: none;
+          z-index: 100;
+        }
+        .main-content-three .owl-theme .custom-nav .owl-prev i, .main-content-three .owl-theme .custom-nav .owl-next i {
+          font-size: 2.5rem;
+          color: #000000;
+        }
+        .main-content-three .owl-theme .custom-nav .owl-prev {
+          left: 0;
+        }
+        .main-content-three .owl-theme .custom-nav .owl-next {
+          right: 0;
+        }
+    
+        .owl-theme .owl-nav [class*=owl-]:hover {
+            background: none !important;
+            color:none !important;
+            text-decoration: none !important;
+        }

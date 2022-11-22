@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="./assets/owl-carousel/css/owl.theme.default.min.css">
 </head>
   <body>
-    <!-- Header Navigation Section -->
-    <header class="main-header">
+    <!-- Header Navigation Section Desktop -->
+    <header class="main-header d-none d-sm-block">
     <div class="container">
         <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-1">
-            <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+            <a href="#" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
             <img src="./assets/images/car-logo.png" alt="London Driven Logo" class="img-fluid"/>
             <span class="logo-text">London Driven</span>
             </a>
@@ -30,23 +30,69 @@
             </ul>
     
             <div class="col-md-4 text-end d-flex">
-            <button type="button" class="btn btn-outline-secondary me-2 w-100">Apply Account</button>
-            <button type="button" class="btn btn-secondary text-black me-2 w-100">Login</button>
-            <button type="button" class="btn btn-secondary w-100">Book Now</button>
+            <button type="button" class="btn btn-outline-secondary me-2">Apply Account</button>
+            <button type="button" class="btn btn-secondary text-black me-2">Login</button>
+            <button type="button" class="btn btn-secondary">Book Now</button>
             </div>
         </header>
     </div>
     </header>
+
+    <!-- Header Navigation Section Mobile -->
+    <header class="main-header d-md-none d-lg-none d-sm-none">
+        <div class="container-fluid">
+            <header class="d-flex flex-wrap justify-content-between py-1">
+                <a href="#" class="col-md-auto text-dark text-decoration-none">
+                <img src="./assets/images/car-logo.png" alt="London Driven Logo" class="img-fluid">
+                <span class="logo-text">London Driven</span>
+                </a>
+
+                <div class="col-md-auto pt-3">
+                    <button class="btn btn-secondary btn-small" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Menu</button>
+                </div>
+
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                    <div class="offcanvas-header pb-0">
+                        <a href="#" class="col-md-auto text-dark text-decoration-none offcanvas-title" id="offcanvasScrollingLabel">
+                            <img src="./assets/images/car-logo.png" alt="London Driven Logo" class="img-fluid">
+                            <span class="logo-text">London Driven</span>
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="nav col-12 mb-2 d-flex flex-column mb-3">
+                            <li><a href="#" class="nav-link-text-home nav-link px-2 link-secondary">Home</a></li>
+                            <li><a href="#" class="nav-link-text nav-link px-2 link-dark">About Us</a></li>
+                            <li><a href="#" class="nav-link-text nav-link px-2 link-dark">Our Fleets</a></li>
+                            <li><a href="#" class="nav-link-text nav-link px-2 link-dark">Our Rate</a></li>
+                            <li><a href="#" class="nav-link-text nav-link px-2 link-dark">Services</a></li>
+                            <li><a href="#" class="nav-link-text nav-link px-2 link-dark">Contact Us</a></li>
+                        </ul>
+
+                        <div class="">
+                            <button type="button" class="btn btn-outline-secondary me-2">Apply Account</button>
+                            <button type="button" class="btn btn-secondary text-black me-2">Login</button>
+                            <button type="button" class="btn btn-secondary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        </header>
     <!-- Main Body Section Start From Here -->
     <main>
         <!-- Home Feature Image Section -->
-        <section class="home-feature-image-section m-0">
-            <div class="container position-relative">
-                <div class="position-absolute w-50 bg-transparent pt-5">
-                <span class="bg-transparent home-feature-text-one">Asimply dummy text of the printing and industry.</span>
-                <h1 class="bg-transparent home-feature-heading mt-3">Asimply dummy text of the printing and typesetting industry.</h1>
-                <p class="bg-transparent home-feature-description mt-3">simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
-                <button class="btn btn-light text-dark w-25 mt-3">Book Now</button>
+        <section class="home-feature-image-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 offset-right-6">
+                        <div class="bg-transparent py-5">
+                            <p class="bg-transparent home-feature-text-one py-3">Asimply dummy text of the printing and industry.</p>
+                            <h1 class="bg-transparent home-feature-heading py-3">Asimply dummy text of the printing and typesetting industry.</h1>
+                            <p class="bg-transparent home-feature-description py-3">simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                            <button class="btn btn-light bg-secondary text-dark border border-0">Book Now</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -142,7 +188,9 @@
                         <p class="our-fleet-text">simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type </p>
                     </div>
                    <div class="col-md-6">
-                    <button class="btn btn-default bg-black text-white w-25">View All ></button>
+                    <div class="float-end">
+                        <button class="btn btn-default bg-black text-white">View All <i class="bi bi-chevron-right"></i></button>
+                    </div>
                    </div>
                 </div>
                 <div class="row">
@@ -218,34 +266,248 @@
                 </div>
             </div>
         </section>
+
+        <!-- Our Services -->
+        <section class="our-services-section">
+            <div class="container py-5">
+                <div class="row my-3">
+                    <div class="col-md-6">
+                        <h2 class="our-services-main-heading">Our Services</h2>
+                        <p class="our-services-text">simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type </p>
+                    </div>
+                   <div class="col-md-6">
+                    <div class="float-end">
+                    <button class="btn btn-default bg-black text-white">View All <i class="bi bi-chevron-right"></i></button>
+                    </div>
+                   </div>
+                </div>
+                <div class="row">
+                  <div class="main-content-two">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item mx-2">
+                            <div class="card align-items-center p-2 rounded-5">
+                                <img src="./assets/images/private-jet.png" class="card-img-top" alt="Corporate Transfer" style="width:100px;">
+                                <div class="card-body text-center">
+                                    <h5 class="our-services-card-title card-title">Corporate Transfer</h5>
+                                    <p class="our-services-card-text card-text">Mercedes S Class is the first choice for VIP travellers. It can accomodate 3 passengers with 1 medium and 1 hand luggage.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item mx-2">
+                            <div class="card align-items-center p-2 rounded-5">
+                                <img src="./assets/images/business.png" class="card-img-top" alt="Wedding Chauffeur" style="width:100px;">
+                                <div class="card-body text-center">
+                                    <h5 class="our-services-card-title card-title">Wedding Chauffeur</h5>
+                                    <p class="our-services-card-text card-text">Mercedes S Class is the first choice for VIP travellers. It can accomodate 3 passengers with 1 medium and 1 hand luggage.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item mx-2">
+                            <div class="card align-items-center p-2 rounded-5">
+                                <img src="./assets/images/wedding.png" class="card-img-top" alt="Corporate Transfer" style="width:100px;">
+                                <div class="card-body text-center">
+                                    <h5 class="our-services-card-title card-title">Corporate Transfer</h5>
+                                    <p class="our-services-card-text card-text">Mercedes S Class is the first choice for VIP travellers. It can accomodate 3 passengers with 1 medium and 1 hand luggage.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-theme">
+                        <div class="owl-controls">
+                          <div class="custom-nav owl-nav"></div>
+                        </div>
+                      </div>
+                  </div>  
+                </div>
+            </div>
+        </section>
+
+        <!-- Why choose us? -->
+        <section class="why-choose-us-section">
+            <div class="container pt-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2 class="why-choose-us-heading">Why choose us?</h2>
+                                <p class="why-choose-us-text pt-3">simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type </p>
+                                <p class="why-choose-us-text">simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type </p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="">
+                                <img src="./assets/images/why-choose-us-image.png" class="img-fluid" alt="" style="margin-top: 70px;"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex mt-4">
+                            <div class="flex-shrink-0">
+                              <img src="./assets/images/stopwatch.png" alt="Free Waiting Time">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                            <span class="why-choose-us-flex-item-title">Free Waiting Time</span>
+                            <p class="why-choose-us-flex-item-text">We offer a free waiting time of 45 minutes for airport transfers and 15 minutes for residential and other addresses.</p>
+                        </div>
+                          </div>
+                          <div class="d-flex mt-4">
+                            <div class="flex-shrink-0">
+                              <img src="./assets/images/hand-shake.png" alt="Meet and Greet">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                            <span class="why-choose-us-flex-item-title">Meet and Greet</span>
+                            <p class="why-choose-us-flex-item-text">We offer meet and greet services at the airport. Our chauffeurs will hold a name card with your name or company name written on it.</p>
+                            </div>
+                          </div>
+                          <div class="d-flex mt-4">
+                            <div class="flex-shrink-0">
+                              <img src="./assets/images/call-center.png" alt="24/7 Support">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                            <span class="why-choose-us-flex-item-title">24/7 Support</span>
+                            <p class="why-choose-us-flex-item-text">We offer 24/7 support. You can contact us anytime you need and we will be there for you. Have any queries?</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What They Say -->
+        <section class="what-they-say-section">
+            <div class="container py-5">
+                <div class="row my-3">
+                    <div class="col-md-6 offset-right-6">
+                        <h2 class="what-they-say-main-heading">What they say</h2>
+                        <p class="what-they-say-text">simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type </p>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="main-content-three">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item mx-2">
+                            <div class="card p-4 rounded-5">
+                                <div class="d-flex justify-content-left what-they-say-item-image-and-text p-3">
+                                    <div>
+                                        <img src="./assets/images/what-they-say-img1.png" class="card-img-top" alt="Corporate Transfer" style="width:100px;">
+                                    </div>
+                                    <div class="mt-4 mx-3">
+                                        <h3 class="what-they-say-user-name">Lily Fiebing</h3>
+                                        <span><i class="bi bi-star-fill"></i></span>
+                                        <span><i class="bi bi-star-fill"></i></span>
+                                        <span><i class="bi bi-star-fill"></i></span>
+                                        <span><i class="bi bi-star-fill"></i></span> 
+                                        <span class="fw-bold what-they-say-ratting-number">5.0</span> 
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="what-they-say-item-card-text card-text">There are many chauffeurs in UK but the London Driven is the best one in the country. Best services and the drivers are well behaved and professional.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item mx-2">
+                            <div class="card p-4 rounded-5">
+                                <div class="d-flex justify-content-left what-they-say-item-image-and-text p-3">
+                                    <div>
+                                        <img src="./assets/images/what-they-say-img2.png" class="card-img-top" alt="Corporate Transfer" style="width:100px;">
+                                    </div>
+                                    <div class="mt-4 mx-3">
+                                        <h3 class="what-they-say-user-name">Lily Fiebing</h3>
+                                        <span><i class="bi bi-star-fill"></i></span>
+                                        <span><i class="bi bi-star-fill"></i></span>
+                                        <span><i class="bi bi-star-fill"></i></span>
+                                        <span><i class="bi bi-star-fill"></i></span> 
+                                        <span class="fw-bold what-they-say-ratting-number">5.0</span> 
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="what-they-say-item-card-text card-text">There are many chauffeurs in UK but the London Driven is the best one in the country. Best services and the drivers are well behaved and professional.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item mx-2">
+                            <div class="card p-4 rounded-5">
+                                <div class="d-flex justify-content-left what-they-say-item-image-and-text p-3">
+                                    <div>
+                                        <img src="./assets/images/what-they-say-img3.png" class="card-img-top" alt="Corporate Transfer" style="width:100px;">
+                                    </div>
+                                    <div class="mt-4 mx-3">
+                                        <h3 class="what-they-say-user-name">Lily Fiebing</h3>
+                                        <span><i class="bi bi-star-fill"></i></span>
+                                        <span><i class="bi bi-star-fill"></i></span>
+                                        <span><i class="bi bi-star-fill"></i></span>
+                                        <span><i class="bi bi-star-fill"></i></span> 
+                                        <span class="fw-bold what-they-say-ratting-number">5.0</span> 
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="what-they-say-item-card-text card-text">There are many chauffeurs in UK but the London Driven is the best one in the country. Best services and the drivers are well behaved and professional.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-theme">
+                        <div class="owl-controls">
+                          <div class="custom-nav owl-nav"></div>
+                        </div>
+                      </div>
+                  </div>  
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <section class="footer-section">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="d-flex justify-content-left">
+                            <img src="./assets/images/car-footer.png" class="img-fluid" alt="Car image footer"/>
+                            <span class="car-logo-text-footer">London Driven</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <p class="footer-title">COMPANY</p>
+                        <div class="d-flex flex-column">
+                            <a href="#" class="footer-link">About Us</a>
+                            <a href="#" class="footer-link">Blog</a>    
+                            <a href="#" class="footer-link">Contact Us</a>    
+                            <a href="#" class="footer-link">Handbook</a>    
+                            <a href="#" class="footer-link">Privacy Policy And GDPR</a>    
+                            <a href="#" class="footer-link">Terms and Conditions</a>    
+                            <a href="#" class="footer-link">Login</a>    
+                            <a href="#" class="footer-link">Signup</a> 
+                        </div>
+   
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <p class="footer-title">OUR SERVICES</p>
+                        <div class="d-flex flex-column">
+                            <a href="#" class="footer-link">Airport Transfers</a>
+                            <a href="#" class="footer-link">Corporate Transfers</a>    
+                            <a href="#" class="footer-link">Event Chauffeurs</a>    
+                            <a href="#" class="footer-link">Private Aviation Transfers</a>    
+                            <a href="#" class="footer-link">Sightseeing Chauffeur Service</a>    
+                            <a href="#" class="footer-link">Wedding Chauffeur Service</a>  
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <p class="footer-title">OUR FLEET</p>
+                        <div class="d-flex flex-column">
+                            <a href="#" class="footer-link">Mercedes S Class</a>    
+                            <a href="#" class="footer-link">Mercedes E Class</a>    
+                            <a href="#" class="footer-link">Mercedes V Class</a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="./assets/owl-carousel/js/jquery.min.js"></script>
     <script src="./assets/owl-carousel/js/owl.carousel.min.js"></script>
-    <script>
-        $('.main-content .owl-carousel').owlCarousel({
-        stagePadding: 30,
-        loop: true,
-        margin: 10,
-        nav: true,
-        dots: false,
-        navText: [
-            '<i class="bi bi-arrow-left-circle-fill"></i>',
-            '<i class="bi bi-arrow-right-circle-fill"></i>'
-        ],
-        navContainer: '.main-content .custom-nav',
-        responsive:{
-            0:{
-                items: 1
-            },
-            600:{
-                items: 3
-            },
-            1000:{
-                items: 3
-            }
-        }
-    });
-    </script>
+    <script src="./assets/owl-carousel/js/owl-custom-js.js"></script>
 </body>
 </html>
